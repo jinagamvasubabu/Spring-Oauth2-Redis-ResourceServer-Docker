@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+ resourceserver:
+  build: .
+  ports:
+   - 8083:8083
+  networks:
+   - local-network
+networks:
+  local-network:
+    driver: bridge
