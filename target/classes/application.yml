@@ -1,0 +1,20 @@
+server:
+  port: 8083
+  servlet:
+   contextPath: /resource
+
+security:
+ oauth2:
+  client:
+   client-id: ResourceServer
+   client-secret: secret
+   access-token-uri: http://localhost:8082/secure/oauth/token
+   grant-type: client_credentials
+  resource:
+   token-info-uri: http://localhost:8082/secure/oauth/check_token
+   token-type: Bearer
+   service-id: resource_api
+
+logging:
+ level:
+  root: DEBUG
