@@ -5,11 +5,7 @@ Refer [Authorization Server](`https://github.com/jinagamvasubabu/Spring-Oauth2-R
 
 
 ## Features:
-* A Beautiful UI to create the clients with the details including ClientId, Client Secret(Bcrypt Password), Access token, Refresh token, ResorcesIds, Scopes and Roles.
-* Tokens will be stored in Redis DB.
-* MYSQL will be used to store the client credentials
 * Docker compatable, just execute startup.sh to start the APP. (Simplified Start)
-* Bonus Endpoint to update the ClientSecret or Password
 * It has two endpoints with different scopes and different roles, refer: [Endpoints](https://github.com/jinagamvasubabu/Spring-Oauth2-Redis-ResourceServer-Docker/blob/master/src/main/java/com/vasu/ResourceServer/api/SecuredController.java)
 
 
