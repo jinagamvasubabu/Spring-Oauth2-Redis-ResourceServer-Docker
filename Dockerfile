@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM  openjdk:8
 EXPOSE 8083 8083
 LABEL maintainer="vasubabu"
 ADD ["target/*.jar", "ResourceServer.jar"]
